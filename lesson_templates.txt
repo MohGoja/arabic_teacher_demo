@@ -1,0 +1,36 @@
+Lesson Templates Summary
+------------------------
+
+1. Slide
+   - Each lesson consists of multiple slides.
+   - Each slide has a title, slide_number, and blocks.
+
+2. Block Types
+   - text: Simple text content.
+   - heading: Section or topic heading.
+   - footnote: Additional notes or clarifications.
+   - graph: Visual representation of relationships (nodes/roots).
+   - animation: Reference to an animation asset (with name/type).
+   - quiz: Multiple-choice questions with options and correct answers.
+   - multiStepQuiz: Multi-step quiz, often with highlighted text segments.
+   - example: List of example words or phrases.
+   - info: Q&A style information blocks.
+
+3. Quiz Templates
+   - Standard quiz: Question, highlighted word, options, correct answer.
+   - Multi-step quiz: Text with highlighted segments, each with options.
+
+4. Graph Templates
+   - Root node with child nodes, sometimes nested.
+
+5. Animation Templates
+   - Animation name and type (large/small).
+
+6. Info/Q&A Templates
+   - Question and answer segments, sometimes with style info.
+
+7. Example Templates
+   - List of example words or sentences.
+
+------------------------
+For each lesson, slides use combinations of these block types to present content, exercises, and visual aids.

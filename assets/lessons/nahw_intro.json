@@ -1,0 +1,1704 @@
+{
+  "id": "nahw_intro",
+  "title": "مقدمة في علم النحو",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "تعريف النحو ",
+      "blocks": [
+        {
+          "type": "text",
+          "data": "النحو: ضبط حال آخر الكلمة إِعرابًا وبناء."
+        },
+        {
+          "type": "footnote",
+          "data": "يخرج بذلك الصرف الذي يدرس بنية الكلمة"
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "title": "الكلمة",
+      "blocks": [
+        {
+          "type": "graph",
+          "data": {
+            "root": "الكلمة",
+            "nodes": [
+              {
+                "label": "أنواع الكلمة",
+                "children": []
+              },
+              {
+                "label": "تقسيمها إلى معرفة ونكرة",
+                "children": []
+              },
+              {
+                "label": "تقسيمها إلى مبني ومعرب",
+                "children": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "title": "الكلام",
+      "blocks": [
+        {
+          "type": "graph",
+          "data": {
+            "root": "الكلام",
+            "nodes": [
+              {
+                "label": "الجملة الفعلية ومكملاتها",
+                "children": []
+              },
+              {
+                "label": "الجملة الاسمية ومكملاتها",
+                "children": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "title": "الكلمة",
+      "blocks": [
+        {
+          "type": "graph",
+          "data": {
+            "root": "أنواع الكلمة",
+            "nodes": [
+              {
+                "label": "اِسم",
+                "children": []
+              },
+              {
+                "label": "فعل",
+                "children": []
+              },
+              {
+                "label": "حرف",
+                "children": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "title": "الاسم",
+      "blocks": [
+        {
+          "type": "text",
+          "data": "هو كلمة تدل على معنىً بذاتها دون ارتباط بزمن."
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "nouns",
+            "type": "large"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "title": "علامات الاسم",
+      "blocks": [
+        {
+          "type": "heading",
+          "data": "1-الجر"
+        },
+        {
+          "type": "text",
+          "data": "مثال على حروف الجر: إلى, على, مِن"
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "nouns_signs_prepositions",
+            "type": "large"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 7,
+      "title": "علامات الاسم",
+      "blocks": [
+        {
+          "type": "heading",
+          "data": "2-ال التعريف"
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "nouns_signs_al",
+            "type": "large"
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "«ال» التي تدخل على الأَفعال فهي «ال» الموصولة."
+        }
+      ]
+    },
+    {
+      "slide_number": 8,
+      "title": "علامات الاسم",
+      "blocks": [
+        {
+          "type": "heading",
+          "data": "3-التنوين"
+        },
+        {
+          "type": "text",
+          "data": "نون ساكنة تلفظ في آخر الكلمة ولا تكتب، وتظهر في صورة تضعيف الحركة, أي فتحتان أو ضمّتان أو كسرتان, فدخول التنوين على الكلمة يدل على أنها اسم"
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "nouns_signs_tanween",
+            "type": "large"
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "الأفعال والحروف لا تنون"
+        }
+      ]
+    },
+    {
+      "slide_number": 9,
+      "title": "علامات الاسم",
+      "blocks": [
+        {
+          "type": "heading",
+          "data": "4-أداة النداء"
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "nouns_signs_call",
+            "type": "large"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 10,
+      "title": "تنبيهات",
+      "blocks": [
+        {
+          "type": "bulletPoints",
+          "data": {
+            "title": "تنبيهات مهمة",
+            "points": [
+              "لا يجتمع التّنوين و«ال» في كلمة واحدة",
+              "ليست كل كسرة دليلا على الجر",
+              "ما لم يكن معرفة فإِنه في الغالب ينون"
+            ],
+            "style": "modern"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 11,
+      "title": "الفعل — حده وعلاماته",
+      "blocks": [
+        {
+          "type": "text",
+          "data": "الفعل: حدث مرتبط بزمن. (ماض، حاضر، مستقبل)."
+        },
+        {
+          "type": "graph",
+          "data": {
+            "root": "يقسم حسب الدلالة الزمنية",
+            "nodes": [
+              {
+                "label": "الفعل الماضي",
+                "children": [
+                  "ماض"
+                ]
+              },
+              {
+                "label": "الفعل المضارع",
+                "children": [
+                  "حاضر"
+                ]
+              },
+              {
+                "label": "فعل الأمر",
+                "children": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 12,
+      "title": "1- الفعل الماضي",
+      "blocks": [
+        {
+          "type": "text",
+          "data": "هو ما دل على حدث وقع في زمنٍ ماضٍ وانتهى."
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "verbs_past_tense",
+            "type": "large"
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "وعلامته قبول تاء التّأنيث السّاكنة. مثل: حفظَت فاطمةُ القرآنَ."
+        },
+        {
+          "type": "footnote",
+          "data": "تذكير: عدم وجود العلامة لا يعني عدم قبولها ."
+        }
+      ]
+    },
+    {
+      "slide_number": 13,
+      "title": "2- الفعل المضارع",
+      "blocks": [
+        {
+          "type": "text",
+          "data": "هو ما دل على الزمن الحاضر أو المستقبل"
+        },
+        {
+          "type": "graph",
+          "data": {
+            "root": "الفعل المضارع",
+            "nodes": [
+              {
+                "label": "الحاضر",
+                "children": [
+                  "مثل: يسجدُ محمدٌ"
+                ]
+              },
+              {
+                "label": "المستقبل",
+                "children": [
+                  "مثل: سيسافرُ خالدٌ"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "حروف المضارعة: النون، والهمزة، والياء، والتاء.مجموعة في قولنا: «أَنَيْتُ».\n\n مثل:  نَسجُدُ، أَسجُدُ، تَسجُدُ، يَسجُدُ."
+        }
+      ]
+    },
+    {
+      "slide_number": 14,
+      "title": "علامات الفعل المضارِع",
+      "blocks": [
+        {
+          "type": "graph",
+          "data": {
+            "root": "علامات الفعل المضارِع",
+            "nodes": [
+              {
+                "label": " دخول الحرف «لم»",
+                "children": [
+                  "قال تعالى: لم يلد ولم يولد"
+                ]
+              },
+              {
+                "label": "دخول حرفي الاِستقبال سوف والسين",
+                "children": [
+                  "ينقلان دلالة الفعل من الحاضر إِلى المستقبل",
+                  "مثل: سوف أشرب، سأشرب"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "تذكير: عدم وجود العلامة لا يعني عدم قبولها ."
+        }
+      ]
+    },
+    {
+      "slide_number": 15,
+      "title": "3- فعل الأمر",
+      "blocks": [
+        {
+          "type": "text",
+          "data": "هو ما دل على حدث يطلب حصوله بعد زمن التكلم\n ويصاغ فعل الأمر بحذف حرف المضارعة من أي فعل مضارع"
+        },
+        {
+          "type": "footnote",
+          "data": "إذا كان الحرف الأول من الفعل بعد الحذف ساكناً أدخلنا همزة الوصل عليه."
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "imperative_verb_1",
+            "type": "small"
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "واذا كان الحرف الأول بعد الحذف متحركا فلا حاجة لإدخال همزة الوصل عليه."
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "imperative_verb_2",
+            "type": "small"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 16,
+      "title": "3- فعل الأمر",
+      "blocks": [
+        {
+          "type": "text",
+          "data": "وعلامته: دلالته على الطلب مع قبوله ياء المخاطبة المؤنثة."
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "imperative_verb_3",
+            "type": "small"
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "تذكير: عدم وجود العلامة لا يعني عدم قبولها ."
+        }
+      ]
+    },
+    {
+      "slide_number": 17,
+      "title": "3- فعل الأمر",
+      "blocks": [
+        {
+          "type": "info",
+          "data": [
+            {
+              "question": "قول الله عز وجل وبالوالدين احسانا, الله يأمرك بالاحسان ولكن ليست فعل أمر, لماذا؟",
+              "answerSegments": [
+                "كلمة (إحسانًا) منتهية بتنوين، والتنوين من علامات الاسم",
+                "فعل الأمر يقبل ياء المخاطبة المؤنثة وليس التنوين",
+                "فليس كل أمر في العربية هي فعل أمر"
+              ]
+            }
+          ],
+          "style": {
+            "title": "مثال"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 18,
+      "title": "تمرين",
+      "blocks": [
+        {
+          "type": "quiz",
+          "data": [
+            {
+              "data": "ميز الأفعال في الجمل التالية"
+            },
+            {
+              "data": "قال تعالى: اذهب الى فرعون انه طغى",
+              "highlightedWord": "اذهب",
+              "options": [
+                {
+                  "key": "madi",
+                  "label": "فعل ماض"
+                },
+                {
+                  "key": "modari",
+                  "label": "فعل مضارع"
+                },
+                {
+                  "key": "amr",
+                  "label": "فعل أمر"
+                }
+              ],
+              "correctAnswer": "amr"
+            },
+            {
+              "data": "قرأً محمدٌ وردَهُ من القرآن",
+              "highlightedWord": "قرأً",
+              "options": [
+                {
+                  "key": "madi",
+                  "label": "فعل ماض"
+                },
+                {
+                  "key": "modari",
+                  "label": "فعل مضارع"
+                },
+                {
+                  "key": "amr",
+                  "label": "فعل أمر"
+                }
+              ],
+              "correctAnswer": "madi"
+            },
+            {
+              "data": "وقل للمؤمنات يغضضنَ من أبصارهن",
+              "highlightedWord": "يغضضنَ",
+              "options": [
+                {
+                  "key": "madi",
+                  "label": "فعل ماض"
+                },
+                {
+                  "key": "modari",
+                  "label": "فعل مضارع"
+                },
+                {
+                  "key": "amr",
+                  "label": "فعل أمر"
+                }
+              ],
+              "correctAnswer": "modari"
+            },
+            {
+              "data": "يصلي خالدٌ العصر",
+              "highlightedWord": "يصلي",
+              "options": [
+                {
+                  "key": "madi",
+                  "label": "فعل ماض"
+                },
+                {
+                  "key": "modari",
+                  "label": "فعل مضارع"
+                },
+                {
+                  "key": "amr",
+                  "label": "فعل أمر"
+                }
+              ],
+              "correctAnswer": "modari"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 19,
+      "title": "الحرف",
+      "blocks": [
+        {
+          "type": "graph",
+          "data": {
+            "root": "الحرف في العربية",
+            "nodes": [
+              {
+                "label": "حرف المبنى",
+                "children": [
+                  "وهو الذي من بنية الكلمة, مثل السين و الجيم والدال في سجد"
+                ]
+              },
+              {
+                "label": "حرف المعنى",
+                "children": [
+                  "ما دل على معنى بغيره, مثل حروف الجر وحروف النداء."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "footnote",
+          "data": "الاسم يدل على معناَ بذاته كما تقدم, أما الحرف فلا يدل على معنا بمفرده بل يحتاج الى كلمة اخرى"
+        },
+        {
+          "type": "animation",
+          "data": {
+            "name": "letters",
+            "type": "large"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 20,
+      "title": "أسئلة سريعة",
+      "blocks": [
+        {
+          "type": "info",
+          "data": [
+            {
+              "question": "ما الفرق بين همزة الاستفهام وكلمة أين؟",
+              "answerSegments": [
+                "الهمزة حرفٌ لا يدل على معنى بذاته",
+                "بخلاف كلمة أين التي تسأل عن المكان"
+              ]
+            },
+            {
+              "question": "سؤال الضمائر ما هي؟",
+              "answerSegments": [
+                "أسماء لأنها تدل على مخاطب أو متكلم"
+              ]
+            },
+            {
+              "question": "هل للحرف علامات؟",
+              "answerSegments": [
+                "الحرف ليس له علامة.",
+                "فعلامته: عدم قبول علامات الاسم أو علامات الفعل.",
+                "فالحرف لا يقبل التنوين أو حروف الجر أو دخولَ لم أو سوف.",
+                "من الخطأ الشائع أن تقول «سوف لن أذهب»."
+              ]
+            }
+          ],
+          "style": {
+            "title": "مثال: أسئلة سريعة"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 21,
+      "title": "تمرين",
+      "blocks": [
+        {
+          "type": "quiz",
+          "data": [
+            {
+              "data": "ميز الفعل من الحرف في الجمل التالية"
+            },
+            {
+              "data": "أنَّ محمدٌ مِن جرحه.",
+              "highlightedWord": "أنَّ",
+              "options": [
+                {
+                  "key": "f3l",
+                  "label": "فعل"
+                },
+                {
+                  "key": "7arf",
+                  "label": "حرف"
+                }
+              ],
+              "correctAnswer": "f3l"
+            },
+            {
+              "data": "وأنَّ الله غفور رحيم",
+              "highlightedWord": "أنَّ",
+              "options": [
+                {
+                  "key": "f3l",
+                  "label": "فعل"
+                },
+                {
+                  "key": "7arf",
+                  "label": "حرف"
+                }
+              ],
+              "correctAnswer": "7arf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 22,
+      "title": "فائدة",
+      "blocks": [
+        {
+          "type": "info",
+          "data": [
+            {
+              "question": "أقسام الكلمة الثلاثة: يساعد في بيانها سياق الجملة الذي تكون فيه",
+              "answerSegments": [
+                "أحياناً تكون الكلمة الواحدة مشتركة في أكثر من قسم",
+                "السياق والعلامات هما اللذان يحددان نوع الكلمة في الجملة",
+                "مثال: كلمة 'نور' يمكن أن تكون اسماً أو فعل أمر حسب السياق"
+              ]
+            }
+          ],
+          "style": {
+            "title": "فائدة مهمة"
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 23,
+      "title": "التمرين النهائي",
+      "blocks": [
+        {
+          "type": "multiStepQuiz",
+          "data": {
+            "prompt": "حدد نوع الكلمات الملونة في سورة الفاتحة",
+            "text": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ١ \nٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ ٢ \nٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ٣ مَٰلِكِ يَوۡمِ ٱلدِّينِ ٤ \nإِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ ٥ ٱهۡدِنَا \nٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ ٦ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ \nعَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ \nوَلَا ٱلضَّآلِّينَ ٧",
+            "style": {
+              "text-align": "justify"
+            },
+            "highlights": [
+              {
+                "start": 0,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "harfjar",
+                    "label": "حرف جر"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  }
+                ],
+                "correctAnswer": "harfjar"
+              },
+              {
+                "start": 1,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 4,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 8,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم علم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 12,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 14,
+                "length": 5,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 20,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 22,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 30,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 32,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 38,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "harfjar",
+                    "label": "حرف جر"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  }
+                ],
+                "correctAnswer": "harfjar"
+              },
+              {
+                "start": 39,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 41,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم علم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 44,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 48,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 50,
+                "length": 6,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 59,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 61,
+                "length": 5,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 69,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 71,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 77,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 82,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 86,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 88,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 94,
+                "length": 6,
+                "options": [
+                  {
+                    "key": "damir",
+                    "label": "ضمير منفصل"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "damir"
+              },
+              {
+                "start": 101,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "modari",
+                    "label": "فعل مضارع"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "modari"
+              },
+              {
+                "start": 102,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "modari",
+                    "label": "فعل مضارع"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "modari"
+              },
+              {
+                "start": 107,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "harf",
+                    "label": "حرف عطف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  }
+                ],
+                "correctAnswer": "harf"
+              },
+              {
+                "start": 108,
+                "length": 6,
+                "options": [
+                  {
+                    "key": "damir",
+                    "label": "ضمير منفصل"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "damir"
+              },
+              {
+                "start": 115,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "modari",
+                    "label": "فعل مضارع"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "modari"
+              },
+              {
+                "start": 116,
+                "length": 6,
+                "options": [
+                  {
+                    "key": "modari",
+                    "label": "فعل مضارع"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "modari"
+              },
+              {
+                "start": 125,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "amr",
+                    "label": "فعل أمر"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "amr"
+              },
+              {
+                "start": 126,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "amr",
+                    "label": "فعل أمر"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "amr"
+              },
+              {
+                "start": 130,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "damir",
+                    "label": "ضمير متصل"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "damir"
+              },
+              {
+                "start": 134,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 136,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 142,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 144,
+                "length": 7,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 153,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 158,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 160,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "mawsool",
+                    "label": "اسم موصول"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "mawsool"
+              },
+              {
+                "start": 165,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "madi",
+                    "label": "فعل ماض"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "madi"
+              },
+              {
+                "start": 166,
+                "length": 4,
+                "options": [
+                  {
+                    "key": "madi",
+                    "label": "فعل ماض"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "madi"
+              },
+              {
+                "start": 170,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "damir",
+                    "label": "ضمير متصل"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "damir"
+              },
+              {
+                "start": 173,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "harfjar",
+                    "label": "حرف جر"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  }
+                ],
+                "correctAnswer": "harfjar"
+              },
+              {
+                "start": 176,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "damir",
+                    "label": "ضمير متصل"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "damir"
+              },
+              {
+                "start": 180,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 184,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 186,
+                "length": 6,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              },
+              {
+                "start": 193,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "harfjar",
+                    "label": "حرف جر"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  }
+                ],
+                "correctAnswer": "harfjar"
+              },
+              {
+                "start": 196,
+                "length": 3,
+                "options": [
+                  {
+                    "key": "damir",
+                    "label": "ضمير متصل"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "damir"
+              },
+              {
+                "start": 201,
+                "length": 1,
+                "options": [
+                  {
+                    "key": "harf",
+                    "label": "حرف عطف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  }
+                ],
+                "correctAnswer": "harf"
+              },
+              {
+                "start": 202,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "harf",
+                    "label": "حرف نفي"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  }
+                ],
+                "correctAnswer": "harf"
+              },
+              {
+                "start": 205,
+                "length": 2,
+                "options": [
+                  {
+                    "key": "al_tarif",
+                    "label": "أل التعريف"
+                  },
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "al_tarif"
+              },
+              {
+                "start": 207,
+                "length": 6,
+                "options": [
+                  {
+                    "key": "ism",
+                    "label": "اسم"
+                  },
+                  {
+                    "key": "fiil",
+                    "label": "فعل"
+                  },
+                  {
+                    "key": "harf",
+                    "label": "حرف"
+                  }
+                ],
+                "correctAnswer": "ism"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

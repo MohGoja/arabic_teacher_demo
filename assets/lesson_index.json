@@ -1,0 +1,24 @@
+{
+  "lessons": [
+    {
+      "id": "nahw_intro",
+      "title": "مقدمة في علم النحو",
+      "slideCount": 23
+    },
+    {
+      "id": "maarifa_nakira",
+      "title": "المعرفة والنكرة",
+      "slideCount": 17
+    },
+    {
+      "id": "muraab_mabni",
+      "title": "المـُعْرَبُ والمـَبْنِي",
+      "slideCount": 30
+    },
+    {
+      "id": "ahkam_al_kalam",
+      "title": "أحكام الكلام",
+      "slideCount": 53
+    }
+  ]
+}

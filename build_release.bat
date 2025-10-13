@@ -1,0 +1,6 @@
+@echo off
+echo Cleaning Flutter cache...
+flutter clean
+echo Building release version...
+flutter build windows --release
+pause

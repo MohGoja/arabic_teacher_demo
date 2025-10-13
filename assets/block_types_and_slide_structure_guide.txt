@@ -1,0 +1,383 @@
+Block Types and Slide Structure Guide
+====================================
+
+SLIDE STRUCTURE
+===============
+
+Each slide in the lesson consists of:
+- slide_number: Integer number identifying the slide
+- title: String containing the slide title
+- blocks: Array of content blocks (see types below)
+
+Example slide structure:
+```json
+{
+  "slide_number": 1,
+  "title": "تعريف النحو",
+  "blocks": [
+    // Array of different block types
+  ]
+}
+```
+
+BLOCK TYPES REFERENCE
+=====================
+
+1. TEXT BLOCK
+-------------
+Type: "text"
+Description: Simple text content for displaying paragraphs or sentences
+Usage: Main content, definitions, explanations
+
+Structure:
+```json
+{
+  "type": "text",
+  "data": "النحو: ضبط حال آخر الكلمة إِعرابًا وبناء."
+}
+```
+
+Example:
+```json
+{
+  "type": "text", 
+  "data": "الفعل: حدث مرتبط بزمن. (ماض، حاضر، مستقبل)."
+}
+```
+
+2. COLORTEXT BLOCK
+------------------
+Type: "colorText"
+Description: Text with colored highlighting and diacritics styling
+Usage: Highlighting specific parts of text, showing grammatical examples with different colors
+
+Structure:
+```json
+{
+  "type": "colorText",
+  "data": {
+    "full_text": "جاء محمدٌ من المدرسة\n\nرأيتُ محمدًّا في المسجد",
+    "textStyle": { "fontSize": 32, "fontWeight": "w600", "color": "#111827" },
+    "highlights": [
+      {
+        "literal": "محمد",
+        "occurrence": 1,
+        "baseStyle": { "color": "#F59E0B" },
+        "diacriticStyle": { "color": "#10B981" }
+      }
+    ]
+  }
+}
+```
+
+Example:
+```json
+{
+  "type": "colorText",
+  "data": {
+    "full_text": "يسجدُ محمدٌ لله\n\nلن يسجدَ محمد لغير الله.",
+    "textStyle": { "fontSize": 22, "fontWeight": "w600" },
+    "highlights": [
+      {
+        "literal": "يسجد",
+        "occurrence": 1,
+        "baseStyle": { "color": "#F59E0B" },
+        "applyDiacritics": true,
+        "diacritics": ["ُ"],
+        "diacriticStyle": { "color": "#10B981" }
+      }
+    ]
+  }
+}
+```
+
+3. SELECTIVETEXT BLOCK
+----------------------
+Type: "selectiveText"
+Description: Interactive text with clickable/hoverable selections that show explanations
+Usage: Terms that need definition, interactive vocabulary learning
+
+Structure:
+```json
+{
+  "type": "selectiveText",
+  "data": {
+    "full_text": "هو الذي تتغير حركةُ آخره لفظًا أو تقديرًا بتغيُّر العوامل الداخلة عليه",
+    "selectedText": [
+      {
+        "حركةُ آخره": "حركة الحرف الأخير من الكلمة"
+      }
+    ]
+  }
+}
+```
+
+4. HEADING BLOCK
+----------------
+Type: "heading"
+Description: Section or topic headings with larger, bold formatting
+Usage: Section titles, major topic introductions
+
+Structure:
+```json
+{
+  "type": "heading",
+  "data": "1-الجر"
+}
+```
+
+Example:
+```json
+{
+  "type": "heading",
+  "data": "علامات الاسم"
+}
+```
+
+5. FOOTNOTE BLOCK
+-----------------
+Type: "footnote"
+Description: Additional notes, clarifications, or supplementary information
+Usage: Side notes, references, additional explanations
+
+Structure:
+```json
+{
+  "type": "footnote",
+  "data": "يخرج بذلك الصرف الذي يدرس بنية الكلمة"
+}
+```
+
+Example:
+```json
+{
+  "type": "footnote",
+  "data": "«ال» التي تدخل على الأَفعال فهي «ال» الموصولة."
+}
+```
+
+6. EXAMPLE BLOCK
+----------------
+Type: "example"
+Description: List of example words or phrases
+Usage: Providing concrete examples of concepts
+
+Structure:
+```json
+{
+  "type": "example",
+  "data": ["إلَهٌ، ورَجُلٌ، ومَسجدُ، وساجدٌ، وسُجُودٌ"]
+}
+```
+
+Example:
+```json
+{
+  "type": "example",
+  "data": [
+    "جاء موسى",
+    "هذا كتاب موسى", 
+    "رأيت موسى"
+  ]
+}
+```
+
+7. GRAPH BLOCK
+--------------
+Type: "graph"
+Description: Visual tree/hierarchy representation with root and child nodes
+Usage: Showing relationships, classifications, grammatical trees
+
+Structure:
+```json
+{
+  "type": "graph",
+  "data": {
+    "root": "الكلمة",
+    "nodes": [
+      { 
+        "label": "أنواع الكلمة", 
+        "children": [] 
+      },
+      { 
+        "label": "تقسيمها إلى معرفة ونكرة", 
+        "children": [] 
+      }
+    ]
+  }
+}
+```
+
+Example:
+```json
+{
+  "type": "graph",
+  "data": {
+    "root": "أنواع الكلمة",
+    "nodes": [
+      { "label": "اِسم", "children": [] },
+      { "label": "فعل", "children": [] },
+      { "label": "حرف", "children": [] }
+    ]
+  }
+}
+```
+
+8. ANIMATION BLOCK
+------------------
+Type: "animation"
+Description: Reference to Rive animation assets
+Usage: Interactive visual demonstrations, engaging content
+
+Structure:
+```json
+{
+  "type": "animation",
+  "data": {
+    "name": "nouns",
+    "type": "large"
+  }
+}
+```
+
+Example:
+```json
+{
+  "type": "animation",
+  "data": {
+    "name": "nouns_signs_prepositions",
+    "type": "large"
+  }
+}
+```
+
+Animation types: "large" or "small"
+
+9. QUIZ BLOCK
+-------------
+Type: "quiz"
+Description: Multiple choice questions with highlighted words
+Usage: Testing comprehension, interactive learning
+
+Structure:
+```json
+{
+  "type": "quiz",
+  "data": [
+    { 
+      "data": "ميز الأفعال في الجمل التالية" 
+    },
+    {
+      "data": "قال تعالى: اذهب الى فرعون انه طغى",
+      "highlightedWord": "اذهب",
+      "options": [
+        { "key": "madi", "label": "فعل ماض" },
+        { "key": "modari", "label": "فعل مضارع" },
+        { "key": "amr", "label": "فعل أمر" }
+      ],
+      "correctAnswer": "amr"
+    }
+  ]
+}
+```
+
+10. MULTISTEPQUIZ BLOCK
+-----------------------
+Type: "multiStepQuiz"
+Description: Multi-step quiz with text highlighting and sequential questions
+Usage: Complex comprehension testing, detailed text analysis
+
+Structure:
+```json
+{
+  "type": "multiStepQuiz",
+  "data": {
+    "prompt": "حدد نوع الكلمات الملونة في سورة الفاتحة",
+    "text": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+    "style": { "text-align": "justify" },
+    "highlights": [
+      {
+        "start": 0,
+        "length": 1,
+        "options": [
+          { "key": "harfjar", "label": "حرف جر" },
+          { "key": "ism", "label": "اسم" },
+          { "key": "fiil", "label": "فعل" }
+        ],
+        "correctAnswer": "harfjar"
+      }
+    ]
+  }
+}
+```
+
+11. INFO BLOCK
+--------------
+Type: "info"
+Description: Q&A style information blocks with carousel presentation
+Usage: FAQ sections, detailed explanations with questions and answers
+
+Structure:
+```json
+{
+  "type": "info",
+  "data": [
+    {
+      "question": "ما الفرق بين همزة الاستفهام وكلمة أين؟",
+      "answerSegments": [
+        "الهمزة حرفٌ لا يدل على معنى بذاته",
+        "بخلاف كلمة أين التي تسأل عن المكان"
+      ]
+    }
+  ],
+  "style": { "title": "مثال: أسئلة سريعة" }
+}
+```
+
+STYLING OPTIONS
+===============
+
+Some blocks support optional styling:
+- "text-align": "justify" | "center" | "left" | "right"
+- "title": String for custom titles
+- Color codes in hex format (e.g., "#F59E0B")
+- Font weights: "w600", "bold"
+- Font sizes: numeric values
+
+USAGE GUIDELINES
+================
+
+1. Start each slide with a descriptive title
+2. Use text blocks for main content
+3. Use heading blocks to break content into sections
+4. Use footnote blocks for supplementary information
+5. Use graph blocks for visual hierarchies and relationships
+6. Use quiz blocks for interactive testing
+7. Use animation blocks to engage learners visually
+8. Use colorText for grammatical examples with highlighting
+9. Use selectiveText for interactive vocabulary
+10. Use info blocks for Q&A style content
+
+ANIMATION NAMING CONVENTIONS
+============================
+
+Animation assets should be placed in assets/animations/ folder:
+- Noun-related: "nouns", "nouns_signs_prepositions", "nouns_signs_al", etc.
+- Verb-related: "verbs_past_tense", "imperative_verb_1", etc.
+- General: "letters", etc.
+
+Types: "large" for full-screen animations, "small" for inline animations
+
+BEST PRACTICES
+==============
+
+1. Keep text blocks concise and focused
+2. Use consistent Arabic fonts and RTL direction
+3. Provide clear, specific quiz questions
+4. Use colors meaningfully in colorText blocks
+5. Structure graphs logically with clear hierarchies
+6. Include helpful footnotes for complex concepts
+7. Test quiz answers for accuracy
+8. Use appropriate animation types for content size
+9. Maintain consistent slide numbering
+10. Provide clear, descriptive slide titles
