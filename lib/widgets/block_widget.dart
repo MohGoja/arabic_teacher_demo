@@ -11,6 +11,7 @@ import 'package:arabic_teacher_demo/widgets/color_text_widget.dart';
 import 'package:arabic_teacher_demo/widgets/footnote_widget.dart';
 import 'package:arabic_teacher_demo/widgets/info_carousel_block.dart';
 import 'package:arabic_teacher_demo/widgets/lesson_card.dart';
+import 'package:arabic_teacher_demo/widgets/matching_quiz_widget.dart';
 import 'package:arabic_teacher_demo/widgets/multi_quiz_block.dart';
 import 'package:arabic_teacher_demo/widgets/quiz_block.dart';
 import 'package:arabic_teacher_demo/widgets/selective_text_widget.dart';
@@ -67,6 +68,8 @@ class _BlockWidgetState extends State<BlockWidget> {
 
       case BlockType.quiz:
         return QuizBlockWidget(block: widget.block);
+      case BlockType.matchingQuiz:
+        return MatchingQuizWidget(block: widget.block);
       case BlockType.animation:
         return AnimationWidget(
           animationName: widget.block.data["name"],

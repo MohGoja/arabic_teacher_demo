@@ -334,6 +334,60 @@ Structure:
 }
 ```
 
+12. MATCHINGQUIZ BLOCK
+----------------------
+Type: "matchingQuiz"
+Description: Two-column matching exercise where users connect items from the left column to their corresponding explanations in the right column
+Usage: Vocabulary matching, concept-definition pairing, cause-effect exercises
+
+Structure:
+```json
+{
+  "type": "matchingQuiz",
+  "data": {
+    "prompt": "تأمل الكلمات التالية وبين سبب عدم جمعها جمع مذكرِ سالم:",
+    "leftColumn": [
+      "زينب",
+      "حامل", 
+      "حصان"
+    ],
+    "rightColumn": [
+      "لأنه اسم مؤنث",
+      "لأنها صفة مؤنث",
+      "لأنه غير عاقل"
+    ],
+    "correctMatches": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    }
+  }
+}
+```
+
+Explanation:
+- prompt: Instructions for the exercise
+- leftColumn: Array of items to be matched (words, concepts, etc.)
+- rightColumn: Array of explanations, definitions, or corresponding items
+- correctMatches: Object mapping left column indices to right column indices (0-based indexing)
+
+Example Usage:
+```json
+{
+  "type": "matchingQuiz",
+  "data": {
+    "prompt": "اربط كل كلمة بنوعها:",
+    "leftColumn": ["كتاب", "يكتب", "من"],
+    "rightColumn": ["اسم", "فعل", "حرف"],
+    "correctMatches": {
+      "0": 0,
+      "1": 1, 
+      "2": 2
+    }
+  }
+}
+```
+
 STYLING OPTIONS
 ===============
 
@@ -357,6 +411,7 @@ USAGE GUIDELINES
 8. Use colorText for grammatical examples with highlighting
 9. Use selectiveText for interactive vocabulary
 10. Use info blocks for Q&A style content
+11. Use matchingQuiz for concept-definition exercises and vocabulary matching
 
 ANIMATION NAMING CONVENTIONS
 ============================

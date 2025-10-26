@@ -8,18 +8,21 @@ This is a Flutter application for teaching Arabic grammar (النحو) with inte
 
 ### Core Content Model (JSON → Dart)
 - **Lessons** contain multiple **Slides**, each with a title and array of **ContentBlocks**
-- Content is loaded from `assets/lesson_sample.json` via `loadLessons()` in `lib/models/lesson.dart`
+- Content is dynamically loaded: lesson index from `assets/lesson_index.json`, individual lessons from `assets/lessons/{lesson_id}.json`
 - The JSON structure is strictly typed through models: `Lesson` → `Slide` → `ContentBlock`
+- Individual lessons are loaded on-demand via `loadLessonById()` for better performance and memory usage
 
 ### Block-Based Content System
 All lesson content is rendered through the **BlockWidget** (`lib/widgets/block_widget.dart`) which maps `BlockType` enum to specific widgets:
 
 ```dart
-// 11 supported block types with specific rendering patterns
+// 13 supported block types with specific rendering patterns
 case BlockType.text: return AnimatedBlockText(...);
 case BlockType.colorText: return ColorTextWidget(...);
 case BlockType.quiz: return QuizBlockWidget(...);
+case BlockType.matchingQuiz: return MatchingQuizWidget(...);
 case BlockType.graph: return AnimatedTreeGraph(...);
+case BlockType.bulletPoints: return BulletPointsWidget(...);
 // etc.
 ```
 
@@ -45,6 +48,11 @@ Theme.of(context).extension<CustomTextStyle>()!.lessonText
 
 ## Development Workflows
 
+### Development Mode Configuration
+- Use **development flags** in `lib/main.dart`: `kDevelopmentMode = true` and `kDevelopmentLessonId = 'lesson_id'`
+- Available lesson IDs: `'nahw_intro'`, `'maarifa_nakira'`, `'muraab_mabni'`, `'ahkam_al_kalam'`
+- Development mode bypasses home page and loads specific lesson directly for faster iteration
+
 ### Adding New Block Types
 1. Add enum to `BlockType` in `lib/models/content_block.dart`
 2. Update `ContentBlock.fromJson()` factory for data parsing
@@ -55,6 +63,11 @@ Theme.of(context).extension<CustomTextStyle>()!.lessonText
 - Reference `assets/block_types_and_slide_structure_guide.txt` for JSON schema
 - Use `lesson_templates.txt` for common patterns
 - Test with `lib/pages/tester_page.dart` for widget development
+
+### Lesson Management
+- Individual lessons stored in `assets/lessons/{lesson_id}.json`
+- Lesson metadata in `assets/lesson_index.json` for home screen display
+- Use `loadLessonById()` for dynamic loading, `loadLessonIndex()` for lesson list
 
 ### Audio Integration
 - Audio files hosted externally: `https://bnmalek.com/wp-content/uploads/language-app/lessons-audio/lesson-1/{narrator}/{slide}.mp3`
@@ -94,7 +107,13 @@ lib/
 └── main.dart        # App setup, theme, localization
 
 assets/
-├── lesson_sample.json              # Main content data
+├── lesson_index.json              # Lesson metadata for home screen
+├── lesson_sample.json             # Legacy file (kept for reference)
+├── lessons/                       # Individual lesson files by ID
+│   ├── nahw_intro.json
+│   ├── maarifa_nakira.json
+│   ├── muraab_mabni.json
+│   └── ahkam_al_kalam.json
 ├── block_types_and_slide_structure_guide.txt  # Content schema reference
 └── animations/      # Rive animation files
 ```

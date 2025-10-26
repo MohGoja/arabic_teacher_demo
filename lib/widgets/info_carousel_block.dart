@@ -27,6 +27,7 @@ class _InfoCarouselBlockState extends State<InfoCarouselBlock> {
 
   // Title template mapping
   Map<String, Map<String, dynamic>> get titleTemplates => {
+    "think": {'text': 'فكر', 'icon': Icons.lightbulb, 'color': Colors.amber},
     'war': {
       'text': 'تنبيه',
       'icon': Icons.warning_amber_rounded,

@@ -8,7 +8,8 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-//// reached slide 36 in powerpoint and row 129 in google sheets
+/// reached and finished أدوات الجزم with proff
+//// reached slide 38 in powerpoint and row 137 in google sheets
 
 // ============ DEVELOPMENT CONFIGURATION ============
 // Set this to true to load a specific lesson directly for development

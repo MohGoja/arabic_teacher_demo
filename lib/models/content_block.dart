@@ -4,6 +4,8 @@ import 'package:arabic_teacher_demo/widgets/color_text_widget.dart'
     show ColorTextData; // + NEW
 import 'package:arabic_teacher_demo/widgets/bullet_points_widget.dart'
     show BulletPointsData;
+import 'package:arabic_teacher_demo/widgets/matching_quiz_widget.dart'
+    show MatchingQuizData;
 import 'graph.dart';
 
 enum BlockType {
@@ -19,6 +21,7 @@ enum BlockType {
   selectiveText,
   colorText,
   bulletPoints,
+  matchingQuiz,
 }
 
 class ContentBlock {
@@ -52,6 +55,10 @@ class ContentBlock {
       );
     } else if (type == BlockType.bulletPoints && json['data'] is Map) {
       parsedData = BulletPointsData.fromJson(
+        Map<String, dynamic>.from(json['data']),
+      );
+    } else if (type == BlockType.matchingQuiz && json['data'] is Map) {
+      parsedData = MatchingQuizData.fromMap(
         Map<String, dynamic>.from(json['data']),
       );
     } else {
