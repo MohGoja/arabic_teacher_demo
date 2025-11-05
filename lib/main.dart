@@ -9,14 +9,22 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 /// reached and finished أدوات الجزم with proff
-//// reached slide 38 in powerpoint and row 137 in google sheets
+///
+///
+///
+///
+///
+///
+///
+
+//// reached slide 52 in powerpoint and row 164 in google sheets
 
 // ============ DEVELOPMENT CONFIGURATION ============
 // Set this to true to load a specific lesson directly for development
 const bool kDevelopmentMode = true;
 // Specify which lesson to load in development mode
 // Available: 'nahw_intro', 'maarifa_nakira', 'muraab_mabni', 'ahkam_al_kalam'
-const String kDevelopmentLessonId = 'muraab_mabni';
+const String kDevelopmentLessonId = 'ahkam_al_kalam';
 // ================================================
 
 ///TODO make a quiz style the user himself hightlights a letter and decides what that is
@@ -26,7 +34,11 @@ const String kDevelopmentLessonId = 'muraab_mabni';
 /// TODO make each widget in the lessons slide to show in order first second and third and so on,
 /// TODO make a play audio teacher, where the slide widgets will synch with the audio and show with the audio
 /// TODO in slide number 16 i don't like the animation too distracting,
-
+/// TODO in ahkam alkalam lesson data, make sure to a3rab each example in examples, not in exercises
+///
+///
+///
+///
 // ============ DEVELOPMENT INSTRUCTIONS ============
 // To quickly load a specific lesson for development:
 // 1. Set kDevelopmentMode = true

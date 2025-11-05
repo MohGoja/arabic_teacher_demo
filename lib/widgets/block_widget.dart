@@ -187,9 +187,14 @@ class _BlockWidgetState extends State<BlockWidget> {
                   ),
                 ],
               ),
-              child: Text(
-                graphTitle,
-                style: const TextStyle(color: Colors.black, fontSize: 18),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  graphTitle,
+                  style: const TextStyle(color: Colors.black, fontSize: 18),
+                  textAlign: TextAlign.center,
+                  textDirection: TextDirection.rtl,
+                ),
               ),
             ),
             children: nodes,

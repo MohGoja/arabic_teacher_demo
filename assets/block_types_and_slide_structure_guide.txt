@@ -20,6 +20,20 @@ Example slide structure:
 }
 ```
 
+LESSON STRUCTURE
+================
+
+Each lesson JSON file has this top-level structure:
+```json
+{
+  "id": "lesson_identifier",
+  "title": "Lesson Title in Arabic",
+  "slides": [
+    // Array of slide objects
+  ]
+}
+```
+
 BLOCK TYPES REFERENCE
 =====================
 
@@ -70,7 +84,7 @@ Structure:
 }
 ```
 
-Example:
+Advanced ColorText with diacritics:
 ```json
 {
   "type": "colorText",
@@ -85,11 +99,38 @@ Example:
         "applyDiacritics": true,
         "diacritics": ["ُ"],
         "diacriticStyle": { "color": "#10B981" }
+      },
+      {
+        "literal": "محمد",
+        "occurrence": 2,
+        "applyBase": false,
+        "applyDiacritics": true,
+        "diacritics": ["ّ", "ً"],
+        "diacriticStyle": { "color": "#EF4444", "decoration": "underline" }
       }
     ]
   }
 }
 ```
+
+ColorText highlight properties:
+- literal: The text to highlight
+- occurrence: Which occurrence to highlight (1-based)
+- charIndex: Specific character index for partial word highlighting
+- baseStyle: Styling for the base text (color, decoration, etc.)
+- diacriticStyle: Styling for diacritics/vowel marks
+- applyBase: Whether to apply base styling (default: true)
+- applyDiacritics: Whether to apply diacritic styling (default: false)
+- diacritics: Array of specific diacritics to style
+
+Common color codes:
+- "#F59E0B": Orange/amber
+- "#10B981": Green
+- "#EF4444": Red
+- "#6366F1": Indigo
+- "#22C55E": Green variant
+- "#7C3AED": Purple
+- "#111827": Dark gray
 
 3. SELECTIVETEXT BLOCK
 ----------------------
@@ -106,6 +147,21 @@ Structure:
     "selectedText": [
       {
         "حركةُ آخره": "حركة الحرف الأخير من الكلمة"
+      }
+    ]
+  }
+}
+```
+
+Example:
+```json
+{
+  "type": "selectiveText",
+  "data": {
+    "full_text": "الذي لا تتغير حركة آخره بتغيُّر العوامل الداخلة عليه؛ فيلزم حالة واحدة. وإذا تغيرت فالتغير سببه الضمائر",
+    "selectedText": [
+      {
+        "الضمائر": "اللواحق"
       }
     ]
   }
@@ -188,7 +244,7 @@ Type: "graph"
 Description: Visual tree/hierarchy representation with root and child nodes
 Usage: Showing relationships, classifications, grammatical trees
 
-Structure:
+Basic Structure:
 ```json
 {
   "type": "graph",
@@ -208,7 +264,34 @@ Structure:
 }
 ```
 
-Example:
+Complex nested structure:
+```json
+{
+  "type": "graph",
+  "data": {
+    "root": "ضمائر المتكلم",
+    "nodes": [
+      {
+        "label": "ضمائر منفصلة",
+        "children": [
+          "ضابطها أنها لا تتصل بغيرها",
+          "أنا, نحن. ايّايَّ وايّانا"
+        ]
+      },
+      {
+        "label": "ضمائر متصلة",
+        "children": [
+          "ضابطها أنها تتصل بغيرها ولا تكون في بداية الكلمة",
+          "-تاء المتكلم مثل قمت",
+          "-ياء المتكلم مثل علَّمَني"
+        ]
+      }
+    ]
+  }
+}
+```
+
+Graph with examples:
 ```json
 {
   "type": "graph",
@@ -222,6 +305,12 @@ Example:
   }
 }
 ```
+
+Graph properties:
+- root: The main/top-level concept
+- nodes: Array of child concepts
+- label: The text label for each node
+- children: Array of sub-concepts or examples (can be strings or empty array)
 
 8. ANIMATION BLOCK
 ------------------
@@ -259,7 +348,7 @@ Type: "quiz"
 Description: Multiple choice questions with highlighted words
 Usage: Testing comprehension, interactive learning
 
-Structure:
+Basic Structure:
 ```json
 {
   "type": "quiz",
@@ -280,6 +369,49 @@ Structure:
   ]
 }
 ```
+
+Quiz without highlighted word:
+```json
+{
+  "type": "quiz",
+  "data": [
+    {
+      "data": "هواء",
+      "highlightedWord": "",
+      "options": [
+        { "key": "a", "label": "ممنوعة من الصرف" },
+        { "key": "b", "label": "ليست ممنوعة من الصرف" }
+      ],
+      "correctAnswer": "b"
+    }
+  ]
+}
+```
+
+Quiz with complex sentences:
+```json
+{
+  "type": "quiz",
+  "data": [
+    { "data": "ميز المعرب والمبني في الآيات التالية" },
+    {
+      "data": "وَهُوَ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍۢ",
+      "highlightedWord": "لَيَقُولَنَّ",
+      "options": [
+        { "key": "moorab", "label": "معرب" },
+        { "key": "mabni", "label": "مبني" }
+      ],
+      "correctAnswer": "mabni"
+    }
+  ]
+}
+```
+
+Quiz properties:
+- data: Question text or instruction
+- highlightedWord: Word to highlight in the question (can be empty string)
+- options: Array of answer choices with key and label
+- correctAnswer: The key of the correct option
 
 10. MULTISTEPQUIZ BLOCK
 -----------------------
@@ -331,6 +463,33 @@ Structure:
     }
   ],
   "style": { "title": "مثال: أسئلة سريعة" }
+}
+```
+
+Available style titles:
+- "مثال": For examples
+- "مثال: أسئلة سريعة": For quick questions
+- "فائدة مهمة": For important benefits/notes
+- "تنبيه": For warnings/alerts
+- "war": For warnings (alternative)
+- "wars": For multiple warnings
+- "remember": For reminders
+- "question": For question highlights
+- "think": For thought-provoking content
+
+Example with warning style:
+```json
+{
+  "type": "info",
+  "data": [
+    {
+      "question": "تنبيه",
+      "answerSegments": [
+        "هذه الكلمات ليست جمع مذكر سالم، لأن نونها أصلية فتعرب بالحركات وهي: مساكين، شياطين، مجانين."
+      ]
+    }
+  ],
+  "style": { "title": "war" }
 }
 ```
 
@@ -388,6 +547,63 @@ Example Usage:
 }
 ```
 
+13. BULLETPOINTS BLOCK
+----------------------
+Type: "bulletPoints"
+Description: Formatted bullet point lists with title and styling options
+Usage: Organized lists of important points, rules, or reminders
+
+Structure:
+```json
+{
+  "type": "bulletPoints",
+  "data": {
+    "title": "تنبيهات مهمة",
+    "points": [
+      "لا يجتمع التّنوين و«ال» في كلمة واحدة",
+      "ليست كل كسرة دليلا على الجر",
+      "ما لم يكن معرفة فإِنه في الغالب ينون"
+    ],
+    "style": "modern"
+  }
+}
+```
+
+Available styles:
+- "modern": Contemporary bullet point styling
+- "classic": Traditional bullet point styling
+
+BLOCK TYPES NOT YET IMPLEMENTED
+================================
+
+The following block types are referenced in the JSON files but may need implementation:
+
+14. BUTTONGROUP BLOCK
+---------------------
+Type: "buttonGroup"
+Description: Interactive button groups for navigation or selection
+Usage: Topic selection, navigation between related concepts
+
+15. TIMELINE BLOCK
+------------------
+Type: "timeline"
+Description: Chronological presentation of events or concepts
+Usage: Historical progression, step-by-step processes
+
+16. COMPARISON BLOCK
+--------------------
+Type: "comparison"
+Description: Side-by-side comparison of concepts
+Usage: Contrasting grammatical rules, before/after examples
+
+17. AUDIO BLOCK
+---------------
+Type: "audio"
+Description: Embedded audio content with playback controls
+Usage: Pronunciation guides, recitation examples
+
+Note: These block types appear in some lessons but may require additional implementation in the Flutter app.
+
 STYLING OPTIONS
 ===============
 
@@ -417,11 +633,14 @@ ANIMATION NAMING CONVENTIONS
 ============================
 
 Animation assets should be placed in assets/animations/ folder:
-- Noun-related: "nouns", "nouns_signs_prepositions", "nouns_signs_al", etc.
-- Verb-related: "verbs_past_tense", "imperative_verb_1", etc.
-- General: "letters", etc.
+- Noun-related: "nouns", "nouns_signs_prepositions", "nouns_signs_al", "nouns_signs_tanween", "nouns_signs_call"
+- Verb-related: "verbs_past_tense", "imperative_verb_1", "imperative_verb_2", "imperative_verb_3"
+- General: "letters"
+- Custom animations: Use descriptive names related to content
 
 Types: "large" for full-screen animations, "small" for inline animations
+
+All animations are Rive (.riv) format and should be placed in assets/animations/
 
 BEST PRACTICES
 ==============
@@ -436,3 +655,111 @@ BEST PRACTICES
 8. Use appropriate animation types for content size
 9. Maintain consistent slide numbering
 10. Provide clear, descriptive slide titles
+11. Use proper JSON formatting and validate structure
+12. Include instruction blocks for complex quizzes
+13. Use selectiveText for interactive vocabulary learning
+14. Apply consistent styling themes across lessons
+15. Test all interactive elements before deployment
+
+DATA CONSISTENCY GUIDELINES
+============================
+
+1. **Text Block Data**: Always use string type
+   ```json
+   { "type": "text", "data": "Your text content here" }
+   ```
+
+2. **Example Block Data**: Always use array type
+   ```json
+   { "type": "example", "data": ["Example 1", "Example 2"] }
+   ```
+
+3. **Graph Block Data**: Always use object with root and nodes
+   ```json
+   { "type": "graph", "data": { "root": "...", "nodes": [...] } }
+   ```
+
+4. **Quiz Block Data**: Always use array starting with instruction
+   ```json
+   { "type": "quiz", "data": [{"data": "Instructions"}, ...questions] }
+   ```
+
+5. **Info Block Data**: Always use array of question objects
+   ```json
+   { "type": "info", "data": [{"question": "...", "answerSegments": [...]}] }
+   ```
+
+VALIDATION CHECKLIST
+====================
+
+Before adding new content, verify:
+- [ ] Slide numbers are sequential
+- [ ] All required fields are present
+- [ ] Data types match block type requirements
+- [ ] Arabic text uses proper RTL direction
+- [ ] Colors use valid hex codes
+- [ ] Quiz answers are correct
+- [ ] Animation names match available assets
+- [ ] JSON syntax is valid
+- [ ] No duplicate slide numbers within a lesson
+
+COMMON ISSUES & TROUBLESHOOTING
+================================
+
+1. **Inconsistent Data Types**
+   - Problem: Using string when array expected
+   - Solution: Check block type requirements above
+
+2. **Missing Slide Numbers**
+   - Problem: Slides without slide_number field
+   - Solution: Add sequential slide_number to each slide
+
+3. **Invalid Quiz Structure**
+   - Problem: Quiz data not starting with instruction
+   - Solution: First item in quiz data array should be instruction
+
+4. **ColorText Highlighting Issues**
+   - Problem: Text not highlighting correctly
+   - Solution: Check literal text matches exactly, verify occurrence number
+
+5. **Graph Display Problems**
+   - Problem: Graph not rendering
+   - Solution: Ensure root and nodes are properly structured
+
+6. **Info Block Styling**
+   - Problem: Custom styles not applying
+   - Solution: Use predefined style titles from the list above
+
+7. **Animation Not Loading**
+   - Problem: Animation block shows error
+   - Solution: Verify animation name exists in assets/animations/
+
+LESSON FILE STRUCTURE VALIDATION
+=================================
+
+Valid lesson file must have:
+```json
+{
+  "id": "unique_lesson_identifier",
+  "title": "Arabic Lesson Title",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "Slide Title",
+      "blocks": [
+        // Valid block objects
+      ]
+    }
+  ]
+}
+```
+
+Required fields:
+- lesson.id (string)
+- lesson.title (string) 
+- lesson.slides (array)
+- slide.slide_number (integer)
+- slide.title (string)
+- slide.blocks (array)
+- block.type (string)
+- block.data (varies by type)
