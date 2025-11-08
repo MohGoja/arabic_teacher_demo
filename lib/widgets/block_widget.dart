@@ -79,7 +79,11 @@ class _BlockWidgetState extends State<BlockWidget> {
       case BlockType.text:
         return AnimatedBlockText(
           blockData: widget.block.data,
-          textStyle: Theme.of(context).extension<CustomTextStyle>()!.lessonText,
+          // textStyle: Theme.of(context).extension<CustomTextStyle>()!.lessonText,
+          textStyle: GoogleFonts.amiri(
+            fontSize: 16,
+            fontWeight: FontWeight.w400,
+          ),
           textAlign:
               (widget.block.style?["text-align"] ?? '') == "justify"
                   ? TextAlign.justify

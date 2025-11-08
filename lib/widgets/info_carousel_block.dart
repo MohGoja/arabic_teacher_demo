@@ -69,7 +69,7 @@ class _InfoCarouselBlockState extends State<InfoCarouselBlock> {
       'color': Colors.indigo,
     },
     'remember': {
-      'text': 'تذكر',
+      'text': 'تذكير',
       'icon': Icons.psychology_outlined,
       'color': Colors.teal,
     },

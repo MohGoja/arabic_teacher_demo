@@ -4,11 +4,10 @@ import 'package:arabic_teacher_demo/pages/home_page.dart';
 import 'package:arabic_teacher_demo/pages/lesson_page.dart';
 import 'package:arabic_teacher_demo/models/lesson.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-/// reached and finished أدوات الجزم with proff
+/// reached slide 77 in powerpoint with proff
 ///
 ///
 ///
@@ -17,11 +16,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 ///
 ///
 
-//// reached slide 52 in powerpoint and row 164 in google sheets
+//// reached slide 77 in powerpoint and row 226 in google sheets
 
 // ============ DEVELOPMENT CONFIGURATION ============
 // Set this to true to load a specific lesson directly for development
-const bool kDevelopmentMode = true;
+const bool kDevelopmentMode = false;
 // Specify which lesson to load in development mode
 // Available: 'nahw_intro', 'maarifa_nakira', 'muraab_mabni', 'ahkam_al_kalam'
 const String kDevelopmentLessonId = 'ahkam_al_kalam';

@@ -39,7 +39,7 @@ class LessonPage extends StatefulWidget {
 }
 
 class _LessonPageState extends State<LessonPage> with TickerProviderStateMixin {
-  int _currentIndex = 27;
+  int _currentIndex = 65;
   late int slidesLength;
   final AudioPlayer _player = AudioPlayer();
   bool _isPlaying = false;
